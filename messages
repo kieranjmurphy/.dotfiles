@@ -1,0 +1,6 @@
+#!/bin/bash
+DISPLAY_MESSAGES=0
+[ $DISPLAY_MESSAGES -eq 0  ] && exit 0
+[ -f `which java` ] && java -version
+[ -f `which ruby` ] && ruby -v
+[ -f `which python` ] && python --version
